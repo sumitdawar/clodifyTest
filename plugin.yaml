@@ -1,0 +1,8 @@
+##############################################
+#               MY PLUGINS                   #
+##############################################
+
+plugins:
+  mogi:
+    executor: central_deployment_agent
+    source: https://github.com/sumitdawar/clodifyTest/archive/master.zip
