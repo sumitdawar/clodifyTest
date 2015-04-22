@@ -6,5 +6,5 @@ imports:
 
 
 node_templates:
-    sumitTest:
+  sumitest:
     type: sumit.Echo
