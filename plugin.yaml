@@ -6,16 +6,3 @@ plugins:
   sumit:
     executor: central_deployment_agent
     source: https://github.com/sumitdawar/clodifyTest/archive/master.zip
-	
-node_types:
-  sumit.Echo:
-    derived_from: cloudify.nodes.Root
-    properties:
-      message:
-        default: 'show me the money'
-        description: >
-          Hello world
-    interfaces:
-      cloudify.interfaces.lifecycle:
-        create:
-          implementation: sumit.src.test.create

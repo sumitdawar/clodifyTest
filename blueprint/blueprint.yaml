@@ -8,3 +8,16 @@ imports:
 node_templates:
   sumitest:
     type: sumit.Echo
+
+node_types:
+  sumit.Echo:
+    derived_from: cloudify.nodes.Root
+    properties:
+      message:
+        default: 'show me the money'
+        description: >
+          Hello world
+    interfaces:
+      cloudify.interfaces.lifecycle:
+        create:
+          implementation: sumit.src.test.create
