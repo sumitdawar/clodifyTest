@@ -6,12 +6,5 @@ imports:
 
 
 node_templates:
-  mock:
-    type: mogi.Echo
-node_types:
-  mogi.Echo:
-    derived_from: cloudify.nodes.Root
-    interfaces:
-      cloudify.interfaces.lifecycle:
-        create:
-          implementation: mogi.lib.echo.create
+  sumitTest:
+    type: sumit.Echo
