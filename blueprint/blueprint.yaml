@@ -20,4 +20,4 @@ node_types:
     interfaces:
       cloudify.interfaces.lifecycle:
         create:
-          implementation: sumit.src.test.create
+          implementation: sumit.src.testEcho.create
